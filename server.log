@@ -1,0 +1,25 @@
+
+> fundednext-landing-page@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+✓ Ready in 1069ms
+○ Compiling / ...
+ GET / 200 in 4.5s (compile: 4.1s, render: 341ms)
+ GET /checkout?plan=Stellar+2-Step&size=6K&price=59.99 200 in 773ms (compile: 739ms, render: 35ms)
+ GET / 200 in 89ms (compile: 6ms, render: 84ms)
+ GET /checkout?plan=Stellar+2-Step&size=6K&price=59.99 200 in 31ms (compile: 4ms, render: 27ms)
+Processing order: {
+  email: 'test@test.com',
+  plan: 'Stellar 2-Step',
+  size: '6K',
+  amount: '59.99',
+  currency: 'USDT',
+  network: 'TRC20'
+}
+ POST /api/orders 200 in 450ms (compile: 425ms, render: 25ms)
+[?25h
