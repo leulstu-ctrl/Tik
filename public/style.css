@@ -1,0 +1,137 @@
+/* Crypto Fintech Theme */
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+.navbar-brand {
+    color: #00ff88 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Forms & Cards */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+}
+
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: rgba(30, 41, 59, 0.5);
+    border-bottom: 1px solid #334155;
+    font-weight: bold;
+    color: #00ff88;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.btn-neon {
+    background-color: #00ff88;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background-color: #00cc6a;
+    color: #0f172a;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+}
+
+.btn-outline-danger {
+    color: #ef4444;
+    border-color: #ef4444;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ef4444;
+    color: #fff;
+}
+
+/* Text Colors */
+.text-neon {
+    color: #00ff88 !important;
+}
+
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+/* Inputs */
+.form-control, .form-select {
+    background-color: #334155;
+    border: 1px solid #475569;
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #334155;
+    border-color: #00ff88;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 136, 0.25);
+}
+
+.input-group-text {
+    background-color: #475569;
+    border-color: #475569;
+    color: #fff;
+}
+
+/* Tables */
+.table {
+    color: #e2e8f0;
+}
+
+.table-dark {
+    --bs-table-bg: #1e293b;
+    --bs-table-border-color: #334155;
+    background-color: #1e293b;
+}
+
+.table-hover tbody tr:hover {
+    color: #fff;
+    background-color: #334155;
+}
+
+/* Misc */
+.balance-display {
+    font-size: 2.5rem;
+    color: #00ff88;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+}
+
+.alert-dark {
+    background-color: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+}
