@@ -1,9 +1,23 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('./database.sqlite', (err) => {
+const fs = require('fs');
+const path = require('path');
+
+// Determine database path
+let dbPath = path.resolve(__dirname, 'database.sqlite');
+
+// Check if we are in a read-only environment (like Vercel)
+try {
+  fs.accessSync(path.dirname(dbPath), fs.constants.W_OK);
+} catch (e) {
+  console.log('Root directory is read-only, falling back to /tmp/database.sqlite');
+  dbPath = '/tmp/database.sqlite';
+}
+
+const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
-    console.error('Could not connect to database', err);
+    console.error('Could not connect to database at ' + dbPath, err);
   } else {
-    console.log('Connected to SQLite database');
+    console.log('Connected to SQLite database at ' + dbPath);
   }
 });
 
